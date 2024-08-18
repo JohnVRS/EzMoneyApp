@@ -17,10 +17,21 @@ class LoginController extends Controller
         ]);
 
         
+
+        if(Auth::attempt($credenciais, $request->remember)){
+            $request->session()->regenerate();
+            return redirect(route('app.main'));
+        } else {
+            return redirect()->back()->with('erro','Email ou senha inválida');
+        }
+        
     }
 
-    public function logout(){
-        
+    public function logout(Request $request){
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect(route('app.index'));
     }
 
     public function create() {

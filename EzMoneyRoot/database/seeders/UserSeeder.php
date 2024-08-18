@@ -14,10 +14,10 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         User::create([
-            'name' => 'João Vitor Rodrigues Santos',
-            'email' => 'joaovitorrodriguessantos8@gmail.com',
+            'name' => 'Teste',
+            'email' => 'TesteTeste@gmail.com',
             'password' => bcrypt('123'),
-            'phone' => '51 997278160',
+            'phone' => '51 99392939',
             'gender' => 'Masculino',
             'birth' => '2004-05-01',
             'revenue' => '1950.32',

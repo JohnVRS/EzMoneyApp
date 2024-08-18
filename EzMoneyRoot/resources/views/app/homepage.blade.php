@@ -11,7 +11,7 @@
         <h5 class="header col s12 bolder">seu App de gerenciamento financeiro, vamos colocar sua vida no lugar 💸 </h5>
       </div>
       <div class="row center">
-        <a href="{{route('login.create')}}" id="download-button" class="btn-large waves-effect waves-light green">Cadastro</a>
+        <a href="{{route('login.form')}}" id="download-button" class="btn-large waves-effect waves-light green">Cadastro</a>
       </div>
       <div class="row center">
             já tem login?<a href="{{route('login.form')}}">Click aqui!</a>

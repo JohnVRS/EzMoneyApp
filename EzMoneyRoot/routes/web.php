@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [AppController::class,'index'])->name('app.index');
 
+Route::view('/main', 'app.main')->name('app.main');
+
 Route::view('/login', 'login.form')->name('login.form');
 Route::post('/auth', [LoginController::class , 'auth'])->name('login.auth');
 Route::get('/logout', [LoginController::class, 'logout'])->name('login.logout');

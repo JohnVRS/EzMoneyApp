@@ -1,57 +1,164 @@
-@extends('app.layout')
-@section('title', 'Página de Login')
-@section('content')
+
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Login & Registration Form</title>
+      <!---Custom CSS File--->
+      <style>
+
+        /* Import Google font - Poppins */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body{
+      min-height: 100vh;
+      width: 100%;
+      background: #009579;
+    }
+    .container{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      max-width: 430px;
+      width: 100%;
+      background: #fff;
+      border-radius: 7px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    }
+    .container .registration{
+      display: none;
+    }
+    #check:checked ~ .registration{
+      display: block;
+    }
+    #check:checked ~ .login{
+      display: none;
+    }
+    #check{
+      display: none;
+    }
+    .container .form{
+      padding: 2rem;
+    }
+    .form header{
+      font-size: 2rem;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .form input{
+      height: 60px;
+      width: 100%;
+      padding: 0 15px;
+      font-size: 17px;
+      margin-bottom: 1.3rem;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      outline: none;
+    }
+
+    .form button{
+      height: 60px;
+      width: 100%;
+      padding: 0 15px;
+      font-size: 17px;
+      margin-bottom: 1.3rem;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      outline: none;
+    }
+    }
+    .form input:focus{
+      box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+    }
+    .form a{
+      font-size: 16px;
+      color: #009579;
+      text-decoration: none;
+    }
+    .form a:hover{
+      text-decoration: underline;
+    }
+    .form button.button{
+      color: #fff;
+      background: #009579;
+      font-size: 1.2rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin-top: 1.7rem;
+      cursor: pointer;
+      transition: 0.4s;
+    }
+    .form button.button:hover{
+      background: #006653;
+    }
+    .signup{
+      font-size: 17px;
+      text-align: center;
+    }
+    .signup label{
+      color: #009579;
+      cursor: pointer;
+    }
+    .signup label:hover{
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+
+    @if($mensagem = Session::get('erro'))
+        {{ $mensagem }}
+    @endif
+
+    @if ($errors->any())
+        @foreach($errors->all() as $error)
+            {{ $error}} <br>
+        @endforeach
+    @endif
 
 
-  <div class="section"></div>
-  <main>
-    <center>
-      
-      <div class="section"></div>
-
-      <h5 class="indigo-text">Please, login into your account</h5>
-      <div class="section"></div>
-
-      <div class="container">
-        <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
-
-          <form class="col s12" method="post">
-            <div class='row'>
-              <div class='col s12'>
-              </div>
-            </div>
-
-            <div class='row'>
-              <div class='input-field col s12'>
-                <input class='validate' type='email' name='email' id='email' />
-                <label for='email'>Enter your email</label>
-              </div>
-            </div>
-
-            <div class='row'>
-              <div class='input-field col s12'>
-                <input class='validate' type='password' name='password' id='password' />
-                <label for='password'>Enter your password</label>
-              </div>
-              <label style='float: right;'>
-								<a class='gray-text' href='#!'><b>Forgot Password?</b></a>
-							</label>
-            </div>
-
-            <br />
-            <center>
-              <div class='row'>
-                <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect green'>Login</button>
-              </div>
-            </center>
-          </form>
-        </div>
+  <div class="container">
+    <input type="checkbox" id="check">
+    <div class="login form">
+      <header>Login</header>
+      <form action="{{ route('login.auth') }}" method="POST">
+        @csrf
+        <input type="text" name="email" placeholder="Enter your email">
+        <input type="password" name="password" placeholder="Enter your password">
+        <a href="#">Forgot password?</a>
+        <button type="submit" class="button"> Login </button>
+      </form>
+      <div class="signup">
+        <span class="signup">Don't have an account?
+         <label for="check">Signup</label>
+        </span>
       </div>
-      <a href="{{route('login.create')}}">Create account</a>
-    </center>
+    </div>
+    <div class="registration form">
+      <header>Signup</header>
+      <form action="">
+        @csrf
+        <input type="text" placeholder="Enter your email">
+        <input type="password" placeholder="Create a password">
+        <input type="password" placeholder="Confirm your password">
+        <input type="button" class="button" value="Signup">
+      </form>
+      <div class="signup">
+        <span class="signup">Already have an account?
+         <label for="check">Login</label>
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
 
-    <div class="section"></div>
-    <div class="section"></div>
-  </main>
-
-@endsection
