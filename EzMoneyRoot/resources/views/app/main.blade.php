@@ -3,8 +3,7 @@
 @section('content')
 
  
-    {{-- IMPEDIR USUARIOS NAO AUTENTICADOS A ENTRAR NESSA PAGINA --}}
-
+  
 
   <h1>main.blade.php</h1>
 
