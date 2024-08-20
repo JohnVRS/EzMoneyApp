@@ -64,6 +64,8 @@
       outline: none;
     }
 
+    
+
     .form button{
       height: 60px;
       width: 100%;
@@ -74,7 +76,7 @@
       border-radius: 6px;
       outline: none;
     }
-    }
+    
     .form input:focus{
       box-shadow: 0 1px 0 rgba(0,0,0,0.2);
     }
@@ -111,6 +113,21 @@
       text-decoration: underline;
     }
 
+    input.gender {
+      width: 7%;
+      height: 15px;
+      font-size: 17px;
+      margin-bottom: 1.3rem;
+      border: 1px solid #ddd;
+      outline: none;
+      left: 0%;
+      top: 0%;
+
+      margin: 0;
+      margin-bottom: 10px;
+      padding-right: 7px; 
+    }
+
   </style>
 </head>
 <body>
@@ -145,12 +162,19 @@
     </div>
     <div class="registration form">
       <header>Signup</header>
-      <form action="">
+      <form action="{{route('users.store')}}" method="POST" enctype="multipart/form-data">
         @csrf
-        <input type="text" placeholder="Enter your email">
-        <input type="password" placeholder="Create a password">
-        <input type="password" placeholder="Confirm your password">
-        <input type="button" class="button" value="Signup">
+        <input type="text" name="name" placeholder="Name">
+        <input type="text" name="email" placeholder="Enter your email">
+        <input type="password" name="password" placeholder="Create a password">
+        <input type="tel" name="phone" placeholder="Phone number">
+        <label for="gender">Gender</label>
+        <input type="checkbox" name="gender" id="male" class="gender" value="1">Male
+        <input type="checkbox" name="gender" id="female" class="gender" value="2">Female
+        <input type="date" name="birth" placeholder="Birth">
+        
+        <button type="submit" class="button">Singup</button>
+
       </form>
       <div class="signup">
         <span class="signup">Already have an account?

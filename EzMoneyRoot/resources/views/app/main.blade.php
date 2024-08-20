@@ -2,8 +2,6 @@
 @section('title', 'Homepage')
 @section('content')
 
- 
-  
 
   <h1>main.blade.php</h1>
 

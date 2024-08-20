@@ -11,6 +11,14 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="../CSS//index/body.css">
+  <link rel="stylesheet" href="../CSS/index/dashboard_saldos.css">
+  <link rel="stylesheet" href="../CSS/modal.css">
+  <link rel="stylesheet" href="../CSS/index/table.css">
+  <link rel="stylesheet" href="../CSS/index/footer.css">
+  <link rel="stylesheet" href="../CSS/index/logo.css">
+  <link rel="stylesheet" href="../CSS/index/graficos.css">
 </head>
 <body>
   <nav class="green lighten-1" role="navigation">
@@ -30,24 +38,6 @@
 @yield('content')
 
 
-  <footer class="page-footer grey lighten-1 z-depth-3">
-    <div class="container ">
-      <div class="row ">
-        <div class="col l3 s12 right">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Instagram</a></li>
-            <li><a class="white-text" href="#!">Github</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="blue-text darken-3" href="https://github.com/JohnVRS">J. Vitor Rodrigues</a>
-      </div>
-    </div>
-  </footer>
 
 
   <!--  Scripts-->

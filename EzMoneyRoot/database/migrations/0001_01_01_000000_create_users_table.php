@@ -22,9 +22,9 @@ return new class extends Migration
             $table->timestamps();
             $table->string('gender');
             $table->date('birth');
-            $table->double('revenue',10,2);
-            $table->double('expense',10,2);
-            $table->double('balance',10,2);
+            $table->double('revenue',10,2)->nullable();
+            $table->double('expense',10,2)->nullable();
+            $table->double('balance',10,2)->nullable();
         });
 
         Schema::create('password_reset_tokens', function (Blueprint $table) {

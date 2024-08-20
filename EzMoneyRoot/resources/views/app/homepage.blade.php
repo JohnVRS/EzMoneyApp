@@ -11,10 +11,10 @@
         <h5 class="header col s12 bolder">seu App de gerenciamento financeiro, vamos colocar sua vida no lugar 💸 </h5>
       </div>
       <div class="row center">
-        <a href="{{route('login.form')}}" id="download-button" class="btn-large waves-effect waves-light green">Cadastro</a>
+        <a href="{{route('login')}}" id="download-button" class="btn-large waves-effect waves-light green">Cadastro</a>
       </div>
       <div class="row center">
-            já tem login?<a href="{{route('login.form')}}">Click aqui!</a>
+            já tem login?<a href="{{route('login')}}">Click aqui!</a>
       </div>
       <br><br>
 
@@ -58,5 +58,24 @@
     </div>
     <br><br>
   </div>
+  
+  <footer class="page-footer grey lighten-1 z-depth-3">
+    <div class="container ">
+      <div class="row ">
+        <div class="col l3 s12 right">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Instagram</a></li>
+            <li><a class="white-text" href="#!">Github</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="blue-text darken-3" href="https://github.com/JohnVRS">J. Vitor Rodrigues</a>
+      </div>
+    </div>
+  </footer>
 
   @endsection
