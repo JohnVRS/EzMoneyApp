@@ -1,0 +1,1 @@
+transformar o login e talvez o cadastro em modais na propria homepage
