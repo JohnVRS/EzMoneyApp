@@ -12,13 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <link rel="stylesheet" href="../CSS//index/body.css">
-  <link rel="stylesheet" href="../CSS/index/dashboard_saldos.css">
-  <link rel="stylesheet" href="../CSS/modal.css">
-  <link rel="stylesheet" href="../CSS/index/table.css">
-  <link rel="stylesheet" href="../CSS/index/footer.css">
-  <link rel="stylesheet" href="../CSS/index/logo.css">
-  <link rel="stylesheet" href="../CSS/index/graficos.css">
+  
 </head>
 <body>
   <nav class="green lighten-1" role="navigation">
@@ -34,15 +28,13 @@
     </div>
   </nav>
 
+  
 
 @yield('content')
-
-
-
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+ 
   </body>
 </html>
