@@ -1,0 +1,13 @@
+.container-overview {
+    width: 1280px;
+    
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
+
+    /*  TENTAR COLOCAR CSS RAIZ NA PASTA RESOURCE, usando vite ou laravel mix.   */
+}

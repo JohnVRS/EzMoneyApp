@@ -2,7 +2,8 @@
 @section('title', 'Homepage')
 @section('content')
 
-  <div class="container">
+  <div class="container-overview">
+    
       <div class="welcome">
         <small style="font-size: 18px;color: rgb(82,82,82);">Boa tarde, -User-</small><br>  
       </div>
