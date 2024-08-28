@@ -74,12 +74,7 @@ body {
     padding-right: 30px;
     border-right: 1px rgb(236, 236, 236) solid;
 }
-.box-rightside {
-    width: 100%;
-    height: 146px;
 
-    padding-left: 30px;
-}
 
 .budget-blocks {
     height: 67px;
@@ -105,4 +100,72 @@ body {
     display: flex;
     font-size: 18px;
     font-weight: 6px;
+}
+
+.box-rightside {
+    width: 100%;
+    height: 146px;
+
+    padding-left: 30px;
+}
+
+.quick-actions .label  p{
+    color: #2e312d;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 17px;
+
+    margin: 0;
+}
+
+.quick-actions ul {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 24px;
+}
+
+.quick-actions li {
+    margin-right: 11px;
+    display: flex;
+    border: 1px solid #f2f4ef;
+    background: #ffffff;
+    border-radius: 10px;
+
+    text-decoration: none;
+    color: #2e312d;
+}
+
+.quick-actions i {
+    font-size: 43px
+}
+
+.quick-actions a {
+    width: 82px;
+    height: 103px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 18px;
+}
+
+.quick-actions .btn-title {
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 7px;
+    color: #2e312d;
+}
+
+
+.custom-tooltip .material-tooltip {
+    background-color: white !important; /* Mudar o fundo para branco */
+    border-radius: 8px !important;      /* Bordas arredondadas */
+    color: black !important;            /* Mudar a cor do texto */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1) !important; /* Sombra suave */
+}
+
+
+.custom-tooltip .material-tooltip:before {
+    border-color: white transparent transparent transparent !important; /* Cor do triângulo */
 }
