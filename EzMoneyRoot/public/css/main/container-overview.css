@@ -1,13 +1,108 @@
-.container-overview {
-    width: 1280px;
-    
-    background-color: black;
 
+body {
+    background-color: rgb(252, 252, 252);
+    /*  TENTAR COLOCAR CSS RAIZ NA PASTA RESOURCE, usando vite ou laravel mix.   */
+}
+
+.container-section {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    
+    flex-direction: column;
+}
 
-    /*  TENTAR COLOCAR CSS RAIZ NA PASTA RESOURCE, usando vite ou laravel mix.   */
+.container-overview {
+    font-family: "Inter", sans-serif;
+    width: 1079px;
+    height: 208px;
+    padding: 30px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px ;
+
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    flex-direction: row;
+}
+
+.budget-overview {
+    display: flex;
+    flex-direction: row;
+
+    width: 587px;
+    height: 67px;
+}
+
+.greeting {
+    height: 43px;
+    
+}
+
+.greeting p:first-child {
+    border: none;
+    color: #5c5f5a;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+.greeting p:last-child {
+    display: flex;
+    align-items: center;
+    color: #2e312d;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 4px;
+    height: 23px;
+}
+
+.box-leftside {
+    width: 100%;
+    height: 146px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-right: 30px;
+    border-right: 1px rgb(236, 236, 236) solid;
+}
+.box-rightside {
+    width: 100%;
+    height: 146px;
+
+    padding-left: 30px;
+}
+
+.budget-blocks {
+    height: 67px;
+    width: 179px;
+
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.budget-blocks label {
+    font-size: 14px;
+    color: #787878;
+    font-weight: 400;
+}
+
+.budget-blocks strong {
+    display: flex;
+    font-size: 18px;
+    font-weight: 6px;
 }
