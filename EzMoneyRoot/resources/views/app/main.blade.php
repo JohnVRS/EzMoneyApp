@@ -34,10 +34,10 @@
                 </div>
       
                 <ul>
-                    <li><a href="" class="expense tooltipped custom-tooltip" data-tooltip="Clique para adicionar uma despesa"><i class="small material-icons red-text" >remove_circle_outline</i> <p class="btn-title">DESPESA</p></a></li>
-                    <li><a href="" class="revenue tooltipped"><i class="small material-icons green-text">add_circle_outline</i> <p class="btn-title">RECEITA</p></a></li>
-                    <li><a href="" class="transfer tooltipped"><i class="small material-icons grey-text">swap_horiz</i> <p class="btn-title">TRANSF.</p></a></li>
-                    <li><a href="" class="export-excel tooltipped"><i class="small material-icons blue-text">file_download</i> <p class="btn-title">EXPORT</p></a></li>
+                    <li><a href="" class="expense" data-tooltip="Clique para adicionar uma despesa"><i class="small material-icons red-text" >remove_circle_outline</i> <p class="btn-title">DESPESA</p></a></li>
+                    <li><a href="" class="revenue"><i class="small material-icons green-text">add_circle_outline</i> <p class="btn-title">RECEITA</p></a></li>
+                    <li><a href="" class="transfer"><i class="small material-icons grey-text">swap_horiz</i> <p class="btn-title">TRANSF.</p></a></li>
+                    <li><a href="" class="export-excel"><i class="small material-icons blue-text">file_download</i> <p class="btn-title">EXPORT</p></a></li>
                 </ul>
                     <!-- CONTINUAR TOOLTIPS CUSTom -->
             </div>

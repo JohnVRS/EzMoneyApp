@@ -156,16 +156,3 @@ body {
     margin-top: 7px;
     color: #2e312d;
 }
-
-
-.custom-tooltip .material-tooltip {
-    background-color: white !important; /* Mudar o fundo para branco */
-    border-radius: 8px !important;      /* Bordas arredondadas */
-    color: black !important;            /* Mudar a cor do texto */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1) !important; /* Sombra suave */
-}
-
-
-.custom-tooltip .material-tooltip:before {
-    border-color: white transparent transparent transparent !important; /* Cor do triângulo */
-}
