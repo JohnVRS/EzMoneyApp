@@ -17,32 +17,58 @@
   
 </head>
 <body>
-  <nav class="green lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
 
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+  <!-- 
+      <nav class="green lighten-1" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#">Navbar Link</a></li>
+          </ul>
 
+          <ul id="nav-mobile" class="sidenav">
+            <li><a href="#">Navbar Link</a></li>
+          </ul>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+      </nav>
+  -->
   
+  <div class="nav-wrapper">
+    <a href="" id="main-logo"> <img src="" alt=""></a>
 
+    <nav id="main-nav">
+      <ul class="main-navigation">
+        <li><a href="">visão geral</a></li>
+        <li><a href="">lançamentos</a></li>
+        <li><a href="">relatórios</a></li>
+        <li><a href="">limites de gastos</a></li>
+      </ul>
+    </nav>
+
+    <nav id="right-nav">
+      <ul>
+        <li>
+              <!-- Settings-->
+              <a href="">SVG</a>
+        </li>
+        <li>  
+              <!-- Notifications -->
+              <a href="">SVG</a>
+        </li>
+        <li>
+              <!-- My Accounts -->
+              <a href="">Account profile</a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+  
 @yield('content')
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('.tooltipped');
-      var instances = M.Tooltip.init(elems);
-    });
-  </script>
   
   </body>
 </html>
