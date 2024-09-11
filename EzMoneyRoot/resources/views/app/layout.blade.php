@@ -9,11 +9,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="{{ asset('css/main/container-overview.css')}}">
+  <link rel="stylesheet" href="{{ asset('css/layout/navbar.css')}}">
   
 </head>
 <body>
@@ -32,37 +33,40 @@
         </div>
       </nav>
   -->
-  
-  <div class="nav-wrapper">
-    <a href="" id="main-logo"> <img src="" alt=""></a>
+  <header id="layout-header">
+    <div class="nav-container ">
+      <a href="" id="main-logo"> <i class="small material-icons white-text" style="font-size:40px ">data_usage
+      </i><p>EzMoney!</p></a>
 
-    <nav id="main-nav">
-      <ul class="main-navigation">
-        <li><a href="">visão geral</a></li>
-        <li><a href="">lançamentos</a></li>
-        <li><a href="">relatórios</a></li>
-        <li><a href="">limites de gastos</a></li>
-      </ul>
-    </nav>
+      <nav id="main-nav" class="">
+        <ul class="main-navigation">
+          <li><a href="">visão geral</a></li>
+          <li><a href="">lançamentos</a></li>
+          <li><a href="">relatórios</a></li>
+          <li><a href="">limites de gastos</a></li>
+        </ul>
+      </nav>
 
-    <nav id="right-nav">
-      <ul>
-        <li>
-              <!-- Settings-->
-              <a href="">SVG</a>
-        </li>
-        <li>  
-              <!-- Notifications -->
-              <a href="">SVG</a>
-        </li>
-        <li>
-              <!-- My Accounts -->
-              <a href="">Account profile</a>
-        </li>
-      </ul>
-    </nav>
+      <nav id="right-nav">
+        <ul>
+          <li>
+                <!-- Settings-->
+                <a href=""><i class="tiny material-icons white-text" >settings</i></a>
+          </li>
+          <li>  
+                <!-- Notifications -->
+                <a href=""><i class="tiny material-icons white-text">notifications</i></a>
+          </li>
+          <li>
+                <!-- My Accounts -->
+                <a href=""><i class="tiny material-icons white-text" style="font-size: 35px;">sentiment_satisfied</i></a>
+          </li>
+        </ul>
+      </nav>
 
   </div>
+  </header>
+  
   
 @yield('content')
 
