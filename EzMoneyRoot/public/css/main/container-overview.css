@@ -1,22 +1,12 @@
 
-body {
-    background-color: rgb(252, 252, 252);
-    /*  TENTAR COLOCAR CSS RAIZ NA PASTA RESOURCE, usando vite ou laravel mix.   */
-}
 
-.container-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
 
 .container-overview {
     font-family: "Inter", sans-serif;
     width: 1079px;
     height: 208px;
     padding: 30px;
-    margin-top: 35px;
+    
     margin-bottom: 20px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 10px ;

@@ -13,26 +13,15 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="{{ asset('css/main/main.css')}}">
   <link rel="stylesheet" href="{{ asset('css/main/container-overview.css')}}">
   <link rel="stylesheet" href="{{ asset('css/layout/navbar.css')}}">
+  <link rel="stylesheet" href="{{ asset('css/main/accounts-overview.css')}}">
+  <link rel="stylesheet" href="{{ asset('css/main/creditCards.css')}}">
   
 </head>
 <body>
 
-  <!-- 
-      <nav class="green lighten-1" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="#">Navbar Link</a></li>
-          </ul>
-
-          <ul id="nav-mobile" class="sidenav">
-            <li><a href="#">Navbar Link</a></li>
-          </ul>
-          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        </div>
-      </nav>
-  -->
   <header id="layout-header">
     <div class="nav-container ">
       <a href="" id="main-logo"> <i class="small material-icons white-text" style="font-size:40px ">data_usage

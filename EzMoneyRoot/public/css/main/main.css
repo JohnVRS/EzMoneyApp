@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(252, 252, 252);
+    /*  TENTAR COLOCAR CSS RAIZ NA PASTA RESOURCE, usando vite ou laravel mix.   */
+}
+
+.layout-section {
+    margin-top: 35px;
+    
+}
+
+.container-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1079px;
+
+
+
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
