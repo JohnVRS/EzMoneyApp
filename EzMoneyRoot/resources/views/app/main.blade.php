@@ -4,10 +4,10 @@
 
 
 <section class="layout-section">
-    <div class="container-section">
+    <div class="section">
 
         <div class="container-overview">
-        
+
             <div class="box-leftside">
                 <div class="greeting">
                      <p>Boa noite,</p>
@@ -47,10 +47,13 @@
             </div>
         </div>
 
-            <div class="accounts-overview"></div>
+
+        <!-- MUDAR DE FLEX PARA GRID, para adiocinar os novos blocos-->
+        <div class="container-wallet">
+            <div class="accounts">ASDASD</div>
 
             <div class="creditCards"></div>
-       
+        </div>
 
     </div>
 </section>
