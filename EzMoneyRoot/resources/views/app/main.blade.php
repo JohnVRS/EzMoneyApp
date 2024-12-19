@@ -50,9 +50,22 @@
 
         <!-- MUDAR DE FLEX PARA GRID, para adiocinar os novos blocos-->
         <div class="container-wallet">
-            <div class="accounts">ASDASD</div>
+            <div class="accountsWallet">
+                <div class="accountBalance">
+                    <small>Saldo Geral</small>
+                    <p><small>R$</small> 3.225.45</p>
+                </div>
+                <ul class="accounts">
+                    <li> Banco Bradesco</li>
+                    <li> Carteira Fisíca</li>
+                    <li> Mercado Pago</li>
+                </ul>
+
+                <a href="...">Gerenciar contas</a>
+            </div>
 
             <div class="creditCards"></div>
+
         </div>
 
     </div>
