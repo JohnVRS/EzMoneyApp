@@ -55,10 +55,33 @@
                     <small>Saldo Geral</small>
                     <p><small>R$</small> 3.225.45</p>
                 </div>
+                <hr>
+                <h4> Minhas contas</h4>
                 <ul class="accounts">
-                    <li> Banco Bradesco</li>
-                    <li> Carteira Fisíca</li>
-                    <li> Mercado Pago</li>
+                    <li>
+                        <div class="circle">
+                            <!-- classe temporária -->
+                        </div>
+                        <div class="accountLabel">
+                            <p>Bradesco</p> <p>R$ 0,00</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="circle">
+                            <!-- classe temporária -->
+                        </div>
+                        <div class="accountLabel">
+                            <p>Carteira física</p> <p>R$ 0,00</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="circle">
+                            <!-- classe temporária -->
+                        </div>
+                        <div class="accountLabel">
+                            <p>Mercado Pago</p> <p>R$ 3.225,45</p>
+                        </div>
+                    </li>
                 </ul>
 
                 <a href="...">Gerenciar contas</a>

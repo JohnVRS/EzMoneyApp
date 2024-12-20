@@ -1,6 +1,6 @@
 .accountsWallet {
     width: 50%;
-    height: 517px;
+    height: 542px;
 
     background-color: white;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -37,11 +37,103 @@
     font-size: 12.5px;
 }
 
+.accountsWallet hr {
+    width: 75%;
+    border-color: #afafaf1e;
+}
+
+.accountsWallet h4 {
+    color: #2E312D;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 17px;
+
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+
+.accounts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .accounts li {
-    width: 100%;
-    height: 108px;
-    
-    background-color: rgba(59, 59, 59, 0.61);
+    width: 80%;
+    height: 98px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
+.accounts li:nth-of-type(2){
+    border-top: 1px solid #afafaf1e;
+    border-bottom: 1px solid #afafaf1e;
+}
+
+.accountLabel {
+    width: 80%;
+
+    margin-left: 15px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.accountLabel p:nth-of-type(1) {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.accountLabel p:nth-of-type(2) {
+    color: rgb(47, 110, 247);
+    font-weight: 500;
+}
+
+.circle {
+
+    height: 48px;
+    width: 48px;
+    border-radius: 30px;
+    box-shadow: -6px 2px 35px -6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -6px 2px 35px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -6px 2px 35px -6px rgba(0,0,0,0.75);
+}
+
+li:nth-child(1) .circle {
+    background-color: red;
+}
+li:nth-child(2) .circle {
+    background-color: brown;
+}
+li:nth-child(3) .circle {
+    background-color: cyan;
+}
+
+.accountsWallet a {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #EBEBEB;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 38px;
+    color: #a0a0a0;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    transition: .3s ease-in;
+
+}
+.accountsWallet a:hover{
+    background-color: rgb(28, 139, 28);
+    color: white;
+    
+}
+
 
