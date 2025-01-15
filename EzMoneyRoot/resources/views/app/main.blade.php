@@ -59,25 +59,19 @@
                 <h4> Minhas contas</h4>
                 <ul class="accounts">
                     <li>
-                        <div class="circle">
-                            <!-- classe temporária -->
-                        </div>
+                        <img src="{{asset("images/icons/bradesco.png")}}" alt="iconBradesco">
                         <div class="accountLabel">
                             <p>Bradesco</p> <p>R$ 0,00</p>
                         </div>
                     </li>
                     <li>
-                        <div class="circle">
-                            <!-- classe temporária -->
-                        </div>
+                        <img src="{{asset("images/icons/nuconta.png")}}" alt="iconNuconta">
                         <div class="accountLabel">
                             <p>Carteira física</p> <p>R$ 0,00</p>
                         </div>
                     </li>
                     <li>
-                        <div class="circle">
-                            <!-- classe temporária -->
-                        </div>
+                        <img src="{{asset("images/icons/mercadopago.png")}}" alt="iconMercadopago">
                         <div class="accountLabel">
                             <p>Mercado Pago</p> <p>R$ 3.225,45</p>
                         </div>
@@ -99,9 +93,9 @@
                 <ul class="Cards">
                     <li>
                         <div class="top">
-                            <img src="" alt="">
-                            <p></p>
-                            <a href=""></a>
+                            <img src="{{asset("images/icons/bradesco.png")}}" alt="iconBradesco">
+                            <p> Bradesco 6630</p>
+                            <a href=""> Ver Fatura</a>
                         </div>
                         <div class="bottom">
                             <div>
@@ -113,6 +107,40 @@
                                 <p><small>R$</small> -9,90</p>
                             </div>
                         </div>
+                        <li>
+                            <div class="top">
+                                <img src="{{asset("images/icons/nuconta.png")}}" alt="iconBradesco">
+                                <p> Nubank</p>
+                                <a href=""> Ver Fatura</a>
+                            </div>
+                            <div class="bottom">
+                                <div>
+                                    <small>Limite Disponível</small>
+                                    <p><small>R$</small> 7.96</p>
+                                </div>
+                                <div> 
+                                    <small>Faturas Atual</small>
+                                    <p><small>R$</small> -401,37</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="top">
+                                <img src="{{asset("images/icons/mercadopago.png")}}" alt="iconBradesco">
+                                <p> Visa Mercado Pago</p>
+                                <a href=""> Ver Fatura</a>
+                            </div>
+                            <div class="bottom">
+                                <div>
+                                    <small>Limite Disponível</small>
+                                    <p><small>R$</small> 689,38</p>
+                                </div>
+                                <div> 
+                                    <small>Faturas Atual</small>
+                                    <p><small>R$</small> -310,62</p>
+                                </div>
+                            </div>
+                        </li>
                     </li>
                 </ul>
             </div>
