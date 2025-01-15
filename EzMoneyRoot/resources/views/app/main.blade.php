@@ -87,7 +87,35 @@
                 <a href="...">Gerenciar contas</a>
             </div>
 
-            <div class="creditCards"></div>
+            <div class="creditCards">
+                <div class="creditBalance">
+                        <!-- Adicionar o Mês das faturas respectivas de forma dinamica -->
+                    <small>Faturas Fevereiro</small>
+                    <p><small>R$</small> -721,89</p>
+                </div>
+                <hr>
+                <h4> Meus Cartões</h4>
+                <!--   MUDAR PARA LISTAS DINAMICAS COM LARAVEL      -->
+                <ul class="Cards">
+                    <li>
+                        <div class="top">
+                            <img src="" alt="">
+                            <p></p>
+                            <a href=""></a>
+                        </div>
+                        <div class="bottom">
+                            <div>
+                                <small>Limite Disponível</small>
+                                <p><small>R$</small> 2690,10</p>
+                            </div>
+                            <div> 
+                                <small>Faturas Atual</small>
+                                <p><small>R$</small> -9,90</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
         </div>
 

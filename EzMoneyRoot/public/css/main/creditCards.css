@@ -8,3 +8,58 @@
 
     
 }
+
+.creditCards h4 {
+    color: #2E312D;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 17px;
+
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+
+.creditCards hr {
+    width: 75%;
+    border-color: #afafaf1e;
+}
+.creditBalance {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 90%;
+    height: 40px;
+    margin: 30px 0px 20px 45px;
+    border-left: 4px solid green;
+    
+    padding-left: 15px;
+
+}
+.creditBalance p {
+    margin: 0px;
+    font-weight: 600;
+    font-size: 17px;
+
+}
+
+.creditBalance small {
+    color: #787878;
+    font-weight: 400;
+    font-size: 12.5px;
+}
+
+.Cards {
+    width: 460px;
+}
+
+.Cards li {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
