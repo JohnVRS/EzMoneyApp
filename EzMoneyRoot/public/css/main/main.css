@@ -23,7 +23,7 @@ body {
     padding-right: 15px;
 }
 
-.container-wallet {
+.container-dashboard {
     display: flex;
     justify-content: space-between;
     align-items: stretch;

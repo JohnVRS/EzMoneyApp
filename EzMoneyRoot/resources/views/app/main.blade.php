@@ -49,7 +49,7 @@
 
 
         <!-- MUDAR DE FLEX PARA GRID, para adiocinar os novos blocos-->
-        <div class="container-wallet">
+        <div class="container-dashboard">
             <div class="accountsWallet">
                 <div class="accountBalance">
                     <small>Saldo Geral</small>
