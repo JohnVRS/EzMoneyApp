@@ -19,6 +19,7 @@
     margin-left: 50px;
     margin-right: 50px;
     
+    
 }
 
 .creditCards hr {
@@ -56,10 +57,128 @@
     width: 460px;
 }
 
+.Cards img {
+    width: 63px;
+    height: 53px;
+    border-radius: 10px;
+
+    margin-right: 20px;
+}
+
 .Cards li {
     display: flex;
     flex-direction: column;
     width: 100%;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+
+
+.Cards .top {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    justify-content: space-between;
+}
+
+.Cards .topGet {
+    display: flex;
+    align-items: center;
+
+}
+
+.topGet strong {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+
+.top a {
+    display: flex;
+    flex-shrink: 0;
+    background-color: #DFFCE9;
+    color: #129E3F;
+    height: 34px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 0 13px;
+    transition: .3s ease-in;
+}
+
+.Cards .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    background-color: #F2F4EF;
+    border-radius: 24px;
+    height: 72px;
+    padding: 0 55px 0 55px;
+
+    margin-left: 40px;
+}
+
+.bottom div {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom label {
+    display: flex;
+    color: #858782;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: -4px;
+}
+
+.bottom span {
+    color: #858782;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    margin-top: 3px;
+}
+.bottom strong {
+    font-size: inherit;
+    font-weight: 700;
+    display: flex;
+    color: #2E312D;
+    margin-left: 6px;
+}
+
+.bottom small {
+    font-size: 11px;
+    color: inherit;
+    margin-left: 4px;
+    letter-spacing: -1px;
+    opacity: 0.7;
+}
+
+
+ .creditButton {
+    width: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #EBEBEB;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 38px;
+    color: #a0a0a0;
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-right: 40px;
+    transition: .3s ease-in;
+
+}
+.creditButton:hover{
+    background-color: rgb(28, 139, 28);
+    color: white;
+    
 }
 
 
