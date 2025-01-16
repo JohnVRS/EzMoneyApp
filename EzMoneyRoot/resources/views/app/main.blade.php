@@ -95,6 +95,8 @@
                     <a href="...">Gerenciar contas</a>
                 </div>
 
+                
+
                 <div class="creditCards">
                     <div class="creditBalance">
                         <!-- Adicionar o Mês das faturas respectivas de forma dinamica -->
@@ -171,6 +173,18 @@
 
                 </div>
 
+                <div class="categoryExpenses">
+                    <h4> Maiores gastos do mês atual</h4>
+                    <ul>
+                        <img src="" alt=""><li>Cuidados Pessoais</li>
+                        <img src="" alt=""><li>Alimentação</li>
+                        <img src="" alt=""><li>Moto</li>
+                        <img src="" alt=""><li>Transporte</li>
+                        <img src="" alt=""><li>Compras</li>
+                    </ul>
+                    <chart class="js"></chart>
+                </div>
+
             </div>
 
         </div>
@@ -178,3 +192,4 @@
 
     <a href="{{ route('login.logout') }}">LOGOUT</a>
 @endsection
+
