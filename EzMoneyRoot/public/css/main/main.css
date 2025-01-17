@@ -16,7 +16,9 @@
     box-sizing: border-box;
 
 }
+
 */
+
 
 body {
     background-color: rgb(252, 252, 252);
@@ -51,12 +53,17 @@ a {
 
 .container-dashboard {
     display: flex;
-    
-    
+    flex-wrap: wrap;
+    gap: 20px;
+
     justify-content: space-between;
-    align-items: stretch;
+    align-items: flex-start;
     width: 100%;
+    
     height: auto;
 
 }
+
+
+
 

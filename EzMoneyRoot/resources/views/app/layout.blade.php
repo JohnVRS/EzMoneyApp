@@ -19,7 +19,8 @@
   <link rel="stylesheet" href="{{ asset('css/layout/navbar.css')}}">
   <link rel="stylesheet" href="{{ asset('css/main/accounts.css')}}">
   <link rel="stylesheet" href="{{ asset('css/main/creditCards.css')}}">
-  <link rel="stylesheet" href="{{ asset('css/main/')}}">
+  <link rel="stylesheet" href="{{ asset('css/main/categoryExpenses.css')}}">
+  <link rel="stylesheet" href="{{ asset('css/main/weekExpenses.css')}}">
   
 </head>
 <body>

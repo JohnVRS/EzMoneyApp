@@ -1,14 +1,16 @@
 .accountsWallet {
-    width: 50%;
-    height: 542px;
+    flex: 1 1 calc(50% - 20px); /* Cada bloco ocupa 50% do espaço, menos o gap */
+    height: auto;
+    max-width: 580px;
+    padding: 20px;
+    margin: 0;
+    
 
     background-color: white;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 10px ;
-    
-    margin-right: 20px;
-    
 }
+
 
 .accountBalance {
 

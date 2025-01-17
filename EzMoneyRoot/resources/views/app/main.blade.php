@@ -58,138 +58,146 @@
                 </div>
             </div>
 
-
-            <!-- MUDAR DE FLEX PARA GRID, para adiocinar os novos blocos-->
             <div class="container-dashboard">
-                <div class="accountsWallet">
-                    <div class="accountBalance">
+
+                <div class="left">
+                    <div class="accountsWallet">
+                        <div class="accountBalance">
+                            <small>Saldo Geral</small>
+                            <p><small>R$</small> 3.225.45</p>
+                        </div>
+                        <hr>
+                        <h4> Minhas contas</h4>
+                        <ul class="accounts">
+                            <li>
+                                <img src="{{ asset('images/icons/bradesco.png') }}" alt="iconBradesco">
+                                <div class="accountLabel">
+                                    <p>Bradesco</p>
+                                    <p>R$ 0,00</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="{{ asset('images/icons/nuconta.png') }}" alt="iconNuconta">
+                                <div class="accountLabel">
+                                    <p>Carteira física</p>
+                                    <p>R$ 0,00</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="{{ asset('images/icons/mercadopago.png') }}" alt="iconMercadopago">
+                                <div class="accountLabel">
+                                    <p>Mercado Pago</p>
+                                    <p>R$ 3.225,45</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <a href="...">Gerenciar contas</a>
+                    </div>
+
+
+                    <div class="categoryExpenses">
+                        <h4> Maiores gastos do mês atual</h4>
+                        <ul>
+                            <img src="" alt="">
+                            <li>Cuidados Pessoais</li>
+                            <img src="" alt="">
+                            <li>Alimentação</li>
+                            <img src="" alt="">
+                            <li>Moto</li>
+                            <img src="" alt="">
+                            <li>Transporte</li>
+                            <img src="" alt="">
+                            <li>Compras</li>
+                        </ul>
+                        <chart class="js"></chart>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="creditCards">
+                        <div class="creditBalance">
+                            <!-- Adicionar o Mês das faturas respectivas de forma dinamica -->
+                            <small>Faturas Fevereiro</small>
+                            <p><small>R$</small> -721,89</p>
+                        </div>
+                        <hr>
+                        <h4> Meus Cartões</h4>
+                        <!--   MUDAR PARA LISTAS DINAMICAS COM LARAVEL      -->
+                        <ul class="Cards">
+                            <li>
+                                <div class="top">
+                                    <div class="topGet">
+                                        <img src="{{ asset('images/icons/bradesco.png') }}" alt="iconBradesco">
+                                        <strong> Bradesco 6630</strong>
+                                    </div>
+                                    <a href=""> Ver Fatura</a>
+                                </div>
+                                <div class="bottom">
+                                    <div>
+                                        <label>Limite Disponível</label>
+                                        <span>R$ <strong>2.690,10</strong></span>
+                                    </div>
+                                    <div>
+                                        <Label>Fatura atual <small>(ven. 10 / 2)</small></Label>
+                                        <span>R$ <strong>-9,90</strong></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top">
+                                    <div class="topGet">
+                                        <img src="{{ asset('images/icons/nuconta.png') }}" alt="iconBradesco">
+                                        <strong> Nubank</strong>
+                                    </div>
+
+                                    <a href=""> Ver Fatura</a>
+                                </div>
+                                <div class="bottom">
+                                    <div>
+                                        <label>Limite Disponível</label>
+                                        <span>R$ <strong>7.96</strong></span>
+                                    </div>
+                                    <div>
+                                        <Label>Fatura atual <small>(ven. 1 / 2)</small></Label>
+                                        <span>R$ <strong>-401,37</strong></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top">
+                                    <div class="topGet">
+                                        <img src="{{ asset('images/icons/mercadopago.png') }}" alt="iconBradesco">
+                                        <strong> Visa Mercado Pago</strong>
+                                    </div>
+
+                                    <a href=""> Ver Fatura</a>
+                                </div>
+                                <div class="bottom">
+                                    <div>
+                                        <label>Limite Disponível</label>
+                                        <span>R$ <strong>689,38</strong></span>
+                                    </div>
+                                    <div>
+                                        <Label>Fatura atual <small>(ven. 10 / 2)</small></Label>
+                                        <span>R$ <strong>-310,62</strong></span>
+                                    </div>
+                                </div>
+                            </li>
+                            </li>
+                        </ul>
+
+                        <a href="" class="creditButton">Gerenciar Cartões</a>
+
+                    </div>
+
+
+                    <div class="weekExpenses">
+                        <h4>Gastos da semana</h4>
+                        <hr>
                         <small>Saldo Geral</small>
-                        <p><small>R$</small> 3.225.45</p>
-                    </div>
-                    <hr>
-                    <h4> Minhas contas</h4>
-                    <ul class="accounts">
-                        <li>
-                            <img src="{{ asset('images/icons/bradesco.png') }}" alt="iconBradesco">
-                            <div class="accountLabel">
-                                <p>Bradesco</p>
-                                <p>R$ 0,00</p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="{{ asset('images/icons/nuconta.png') }}" alt="iconNuconta">
-                            <div class="accountLabel">
-                                <p>Carteira física</p>
-                                <p>R$ 0,00</p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="{{ asset('images/icons/mercadopago.png') }}" alt="iconMercadopago">
-                            <div class="accountLabel">
-                                <p>Mercado Pago</p>
-                                <p>R$ 3.225,45</p>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <a href="...">Gerenciar contas</a>
-                </div>
-
-                
-
-                <div class="creditCards">
-                    <div class="creditBalance">
-                        <!-- Adicionar o Mês das faturas respectivas de forma dinamica -->
-                        <small>Faturas Fevereiro</small>
-                        <p><small>R$</small> -721,89</p>
-                    </div>
-                    <hr>
-                    <h4> Meus Cartões</h4>
-                    <!--   MUDAR PARA LISTAS DINAMICAS COM LARAVEL      -->
-                    <ul class="Cards">
-                        <li>
-                            <div class="top">
-                                <div class="topGet">
-                                    <img src="{{ asset('images/icons/bradesco.png') }}" alt="iconBradesco">
-                                    <strong> Bradesco 6630</strong>
-                                </div>
-                                <a href=""> Ver Fatura</a>
-                            </div>
-                            <div class="bottom">
-                                <div>
-                                    <label>Limite Disponível</label>
-                                    <span>R$ <strong>2.690,10</strong></span>
-                                </div>
-                                <div>
-                                    <Label>Fatura atual <small>(ven. 10 / 2)</small></Label>
-                                    <span>R$ <strong>-9,90</strong></span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="top">
-                                <div class="topGet">
-                                    <img src="{{ asset('images/icons/nuconta.png') }}" alt="iconBradesco">
-                                    <strong> Nubank</strong>
-                                </div>
-
-                                <a href=""> Ver Fatura</a>
-                            </div>
-                            <div class="bottom">
-                                <div>
-                                    <label>Limite Disponível</label>
-                                    <span>R$ <strong>7.96</strong></span>
-                                </div>
-                                <div>
-                                    <Label>Fatura atual <small>(ven. 1 / 2)</small></Label>
-                                    <span>R$ <strong>-401,37</strong></span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="top">
-                                <div class="topGet">
-                                    <img src="{{ asset('images/icons/mercadopago.png') }}" alt="iconBradesco">
-                                    <strong> Visa Mercado Pago</strong>
-                                </div>
-
-                                <a href=""> Ver Fatura</a>
-                            </div>
-                            <div class="bottom">
-                                <div>
-                                    <label>Limite Disponível</label>
-                                    <span>R$ <strong>689,38</strong></span>
-                                </div>
-                                <div>
-                                    <Label>Fatura atual <small>(ven. 10 / 2)</small></Label>
-                                    <span>R$ <strong>-310,62</strong></span>
-                                </div>
-                            </div>
-                        </li>
-                        </li>
-                    </ul>
-
-                    <a href="" class="creditButton">Gerenciar Cartões</a>
-
-                </div>
-
-                <div class="categoryExpenses">
-                    <h4> Maiores gastos do mês atual</h4>
-                    <ul>
-                        <img src="" alt=""><li>Cuidados Pessoais</li>
-                        <img src="" alt=""><li>Alimentação</li>
-                        <img src="" alt=""><li>Moto</li>
-                        <img src="" alt=""><li>Transporte</li>
-                        <img src="" alt=""><li>Compras</li>
-                    </ul>
-                    <chart class="js"></chart>
-                </div>
-
-                <div class="weekExpenses">
-                    <h4>Gastos da semana</h4>
-                    <hr>
-                    <small>Saldo Geral</small>
                         <p><small>R$</small> 455,90</p>
+                    </div>
+
                 </div>
 
             </div>
@@ -199,4 +207,3 @@
 
     <a href="{{ route('login.logout') }}">LOGOUT</a>
 @endsection
-

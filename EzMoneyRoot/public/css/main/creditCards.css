@@ -1,12 +1,14 @@
+
+
 .creditCards {
-    width: 50%;
-    height: 777px;
-
-    background-color: white;
+    flex: 1 1 calc(50% - 20px); /* Cada bloco ocupa 50% do espaço, menos o gap */
+    max-width: 600px; /* Define um limite para o tamanho */
+    background-color: white; /* Cor de fundo */
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    border-radius: 10px ;
-
-    
+    border-radius: 10px;
+    padding: 20px; /* Espaçamento interno */
+    height: auto; /* Altura dinâmica baseada no conteúdo */
+    margin: 0; /* Remove margens extras */
 }
 
 .creditCards h4 {
