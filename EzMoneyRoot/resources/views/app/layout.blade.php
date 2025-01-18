@@ -13,14 +13,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="{{ asset('css/layout/body.css')}}">
-  <link rel="stylesheet" href="{{ asset('css/main/main.css')}}">
-  <link rel="stylesheet" href="{{ asset('css/main/container-overview.css')}}">
-  <link rel="stylesheet" href="{{ asset('css/layout/navbar.css')}}">
-  <link rel="stylesheet" href="{{ asset('css/main/accounts.css')}}">
-  <link rel="stylesheet" href="{{ asset('css/main/creditCards.css')}}">
-  <link rel="stylesheet" href="{{ asset('css/main/categoryExpenses.css')}}">
-  <link rel="stylesheet" href="{{ asset('css/main/weekExpenses.css')}}">
+  @vite('resources/css/app.css')
+
   
 </head>
 <body>
