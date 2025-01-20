@@ -98,19 +98,22 @@
 
                     <div class="categoryExpenses">
                         <h4> Maiores gastos do mês atual</h4>
-                        <ul>
-                            <img src="" alt="">
-                            <li>Cuidados Pessoais</li>
-                            <img src="" alt="">
-                            <li>Alimentação</li>
-                            <img src="" alt="">
-                            <li>Moto</li>
-                            <img src="" alt="">
-                            <li>Transporte</li>
-                            <img src="" alt="">
-                            <li>Compras</li>
-                        </ul>
-                        <chart class="js"></chart>
+                        <div>
+                            <ul>
+                                <li><span><img src="" alt="">Alimentação</span><strong>36,77%</strong></li>
+                                
+                                <li><span><img src="" alt="">Cuidados pessoais</span><strong>36,44%</strong></li>
+                                
+                                <li><span><img src="" alt="">Moto</span><strong>13,50%</strong></li>
+                                
+                                <li><span><img src="" alt="">Assinaturas e serviços</span><strong>6,07%</strong></li>
+                                
+                                <li><span><img src="" alt="">Transporte</span><strong>5,81%</strong></li>
+                            </ul>
+
+                            <chart class="js"></chart>
+                        </div>
+                    
                     </div>
                 </div>
                 <div class="right">

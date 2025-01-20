@@ -18,3 +18,10 @@
 
     padding: 30px 0px 0px 30px;
 }
+
+.categoryExpenses li {
+    padding: 0px 0px 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
