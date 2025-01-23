@@ -98,20 +98,20 @@
 
                     <div class="categoryExpenses">
                         <h4> Maiores gastos do mês atual</h4>
-                        <div>
+                        <div class="containerData">
                             <ul>
-                                <li><span><img src="" alt="">Alimentação</span><strong>36,77%</strong></li>
+                                <li><span><i class="tiny large material-icons green">local_pizza</i>Alimentação</span><strong>36,77%</strong></li>
                                 
-                                <li><span><img src="" alt="">Cuidados pessoais</span><strong>36,44%</strong></li>
+                                <li><span><i class="tiny large material-icons pink">accessibility</i>Cuidados pessoais</span><strong>36,44%</strong></li>
                                 
-                                <li><span><img src="" alt="">Moto</span><strong>13,50%</strong></li>
+                                <li><span><i class="tiny large material-icons orange">motorcycle</i>Moto</span><strong>13,50%</strong></li>
                                 
-                                <li><span><img src="" alt="">Assinaturas e serviços</span><strong>6,07%</strong></li>
+                                <li><span><i class="tiny large material-icons purple">payment</i>Assinaturas e serviços</span><strong>6,07%</strong></li>
                                 
-                                <li><span><img src="" alt="">Transporte</span><strong>5,81%</strong></li>
+                                <li><span><i class="tiny large material-icons blue">local_taxi</i>Transporte</span><strong>5,81%</strong></li>
                             </ul>
 
-                            <chart class="js"></chart>
+                            <img src="{{asset("images/svg/donut-chart.svg")}}" alt="">
                         </div>
                     
                     </div>
