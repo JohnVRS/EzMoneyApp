@@ -195,10 +195,16 @@
 
 
                     <div class="weekExpenses">
+                        
                         <h4>Gastos da semana</h4>
                         <hr>
-                        <small>Saldo Geral</small>
-                        <p><small>R$</small> 455,90</p>
+                        <div>
+                            <small>Semana</small>
+                            <p><small>R$</small> 455,90</p>
+
+                        
+                        </div>
+                        
                     </div>
 
                 </div>

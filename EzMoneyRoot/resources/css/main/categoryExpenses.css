@@ -52,13 +52,14 @@
 
 .categoryExpenses i {
     border-radius: 50px;
-    font-size: 35px;
+    font-size: 33px;
     margin-right: 15px;
+    padding: 3px;
 }
 
 /*  temporario  */
 
 .categoryExpenses img {
     margin-left: 25px;
-    width: 135px;
+    width: 140px;
 }
