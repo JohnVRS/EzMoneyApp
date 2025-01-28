@@ -26,8 +26,8 @@
 
       <nav id="main-nav" class="">
         <ul class="main-navigation">
-          <li><a href="">visão geral</a></li>
-          <li><a href="">lançamentos</a></li>
+          <li><a href=" {{ route('main.index')}}">visão geral</a></li>
+          <li><a href="{{ route('transactions.view') }}">lançamentos</a></li>
           <li><a href="">relatórios</a></li>
           <li><a href="">limites de gastos</a></li>
         </ul>
