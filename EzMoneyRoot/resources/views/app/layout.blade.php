@@ -41,7 +41,7 @@
           </li>
           <li>  
                 <!-- Notifications -->
-                <a href=""><i class="tiny material-icons white-text">notifications</i></a>
+                <a href="{{route('welcome')}}"><i class="tiny material-icons white-text">notifications</i></a>
           </li>
           <li>
                 <!-- My Accounts -->

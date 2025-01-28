@@ -20,3 +20,4 @@ Route::get('/register', [LoginController::class, 'create'])->name('login.create'
 
 
 Route::view('/transactions', 'app/transactions')->name("transactions.view");
+Route::view('/welcome', 'app/welcome')->name('welcome');
