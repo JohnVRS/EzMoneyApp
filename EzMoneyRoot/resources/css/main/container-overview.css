@@ -130,7 +130,7 @@
     font-size: 43px
 }
 
-.quick-actions a {
+.quick-actions a,button {
     width: 82px;
     height: 103px;
     display: flex;
@@ -138,6 +138,12 @@
     justify-content: center;
     text-align: center;
     padding-top: 18px;
+}
+
+.quick-actions button {
+    background: #ffffff;
+    border: 1px solid #f2f4ef;
+    border-radius: 10px;
 }
 
 .quick-actions .btn-title {
