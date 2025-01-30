@@ -2,11 +2,12 @@
 @section('title', 'Homepage')
 @section('content')
 
+<!-- Recriar homepage com bootstrap -->
 
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center  teal-text text-lighten-2">Bem-vindo ao Fins</h1>
+      <h1 class="header center  teal-text text-lighten-2">Bem-vindo ao EzMoney </h1>
       <div class="row center">
         <h5 class="header col s12 bolder">seu App de gerenciamento financeiro, vamos colocar sua vida no lugar 💸 </h5>
       </div>
@@ -73,7 +74,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="blue-text darken-3" href="https://github.com/JohnVRS">J. Vitor Rodrigues</a>
+      Desenvolvido por:  <a class="blue-text darken-3" href="https://github.com/JohnVRS">J. Vitor Rodrigues</a>
       </div>
     </div>
   </footer>

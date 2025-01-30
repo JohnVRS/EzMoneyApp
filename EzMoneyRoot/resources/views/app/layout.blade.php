@@ -12,52 +12,58 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
   @vite('resources/css/app.css')
 
   
 </head>
 <body>
-  <!-- Recriar o layout usando o bootstrap -->
-  <header id="layout-header">
-    <div class="nav-container ">
-      <a href="" id="main-logo"> <i class="small material-icons white-text" style="font-size:40px ">data_usage
-      </i><p>EzMoney!</p></a>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+              <a class="navbar-brand me-200" href="{{route('app.index')}}">EzMoney</a>
 
-      <nav id="main-nav" class="">
-        <ul class="main-navigation">
-          <li><a href=" {{ route('main.index')}}">visão geral</a></li>
-          <li><a href="{{ route('transactions.view') }}">lançamentos</a></li>
-          <li><a href="">relatórios</a></li>
-          <li><a href="">limites de gastos</a></li>
-        </ul>
+              <div class="collapse navbar-collapse justify-content-center mx-auto" id="mainNav">
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link" href="{{ route('main.index')}}">Visão Geral</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="{{ route('transactions.view') }}">Lançamentos</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Relatórios</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Limite de Gastos</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="collapse navbar-collapse justify-content-end" id="secondaryNav">
+                <ul class="navbar-nav ms-200">
+                  <li class="nav-item">
+                    <a href="">Settings</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="">Notifications</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="">Profile</a>
+                  </li>
+                </ul>
+              </div>
+          </div>
       </nav>
-
-      <nav id="right-nav">
-        <ul>
-          <li>
-                <!-- Settings-->
-                <a href=""><i class="tiny material-icons white-text" >settings</i></a>
-          </li>
-          <li>  
-                <!-- Notifications -->
-                <a href="{{route('welcome')}}"><i class="tiny material-icons white-text">notifications</i></a>
-          </li>
-          <li>
-                <!-- My Accounts -->
-                <a href=""><i class="tiny material-icons white-text" style="font-size: 35px;">sentiment_satisfied</i></a>
-          </li>
-        </ul>
-      </nav>
-
-  </div>
   </header>
-  
-  
-@yield('content')
 
-  <!--  Scripts-->
+
+  
+  @yield('content')
+
+  <footer>
+    <!--  CRIAR FOOTER-->
+  </footer>
+  
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  
-  
   </body>
 </html>
