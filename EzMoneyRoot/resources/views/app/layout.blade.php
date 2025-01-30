@@ -19,8 +19,8 @@
 </head>
 <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
+      <nav class="navbar navbar-expand-sm bg-body-tertiary p-0">
+          <div class="container-fluid "style="background: #16C64F;height: 52px;">
               <a class="navbar-brand me-200" href="{{route('app.index')}}">EzMoney</a>
 
               <div class="collapse navbar-collapse justify-content-center mx-auto" id="mainNav">
