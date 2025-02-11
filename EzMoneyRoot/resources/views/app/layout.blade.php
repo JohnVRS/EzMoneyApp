@@ -21,9 +21,12 @@
     <header>
       <nav class="navbar navbar-expand-sm bg-body-tertiary p-0">
           <div class="container-fluid "style="background: #16C64F;height: 52px;">
-              <a class="navbar-brand me-200" href="{{route('app.index')}}">EzMoney</a>
+            <div id="nav-brand" class="ms-5 col justify-content-center align-items-center">
+              <a class="navbar-brand align-items-center" href="{{route('app.index')}}"><i class="bi bi-boxes" style="font-size: 20px"></i> EzMoney!</a>
+            </div>
+              
 
-              <div class="collapse navbar-collapse justify-content-center mx-auto" id="mainNav">
+              <div class="collapse col navbar-collapse justify-content-center mx-auto" id="mainNav">
                   <ul class="navbar-nav">
                       <li class="nav-item">
                           <a class="nav-link" href="{{ route('main.index')}}">Visão Geral</a>
@@ -39,8 +42,8 @@
                       </li>
                   </ul>
               </div>
-              <div class="collapse navbar-collapse justify-content-end" id="secondaryNav">
-                <ul class="navbar-nav ms-200">
+              <div class="collapse col navbar-collapse justify-content-center" id="secondaryNav">
+                <ul class="navbar-nav">
                   <li class="nav-item">
                     <a href="">Settings</a>
                   </li>
