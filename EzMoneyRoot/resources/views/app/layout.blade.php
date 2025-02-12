@@ -21,7 +21,7 @@
     <header>
       <nav class="navbar navbar-expand-sm bg-body-tertiary p-0">
           <div class="container-fluid "style="background: #16C64F;height: 52px;">
-            <div id="nav-brand" class="col ms-5 pt-3">
+            <div id="nav-brand" class="col" style="margin-left: 150px;margin-top:20px">
               <a class="navbar-brand" href="{{route('app.index')}}"><p class="text-light text-end"><i class="bi bi-boxes text-light" style="font-size: 23px"></i> EzMoney!</p> </a>
             </div>
               
@@ -42,7 +42,7 @@
                       </li>
                   </ul>
               </div>
-              <div class="collapse col navbar-collapse justify-content-start align-items-center" id="secondaryNav">
+              <div class="collapse col navbar-collapse justify-content-start align-items-center me-5" id="secondaryNav">
                 <ul class="navbar-nav">
                   <li class="nav-item mt-2 me-2">
                     <a href=""><i class="bi bi-gear-fill text-light"></i></a>
@@ -63,8 +63,25 @@
   
   @yield('content')
 
-  <footer>
-    <!--  CRIAR FOOTER-->
+  <footer class="">
+    <div class="container-fluid bg-body-secondary">
+      <div class="col ">
+        <div class="row ">
+          <h5 class="text-Dark">Connect</h5>
+          <ul>
+            <li class="mt-3"><a class="fs-4 text-dark text-decoration-none" href="#!">Instagram</a></li>
+            <li class="mt-3"><a class="fs-4 text-dark text-decoration-none" href="https://github.com/JohnVRS">Github</a></li>
+          </ul>
+        </div>
+        <div class="row footer-copyright">
+          <span class="text-success align-middle">
+            Desenvolvido por:  <a class="fs-4 text-primary text-decoration-none" href="https://github.com/JohnVRS"> J. Vitor Rodrigues</a>
+          </span>
+        </div>
+      </div>
+      
+    </div>
+    
   </footer>
   
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

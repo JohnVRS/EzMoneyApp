@@ -60,23 +60,6 @@
     <br><br>
   </div>
   
-  <footer class="page-footer grey lighten-1 z-depth-3">
-    <div class="container ">
-      <div class="row ">
-        <div class="col l3 s12 right">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Instagram</a></li>
-            <li><a class="white-text" href="#!">Github</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Desenvolvido por:  <a class="blue-text darken-3" href="https://github.com/JohnVRS">J. Vitor Rodrigues</a>
-      </div>
-    </div>
-  </footer>
+  
 
   @endsection
