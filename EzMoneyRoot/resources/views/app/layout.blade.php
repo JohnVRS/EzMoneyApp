@@ -21,37 +21,37 @@
     <header>
       <nav class="navbar navbar-expand-sm bg-body-tertiary p-0">
           <div class="container-fluid "style="background: #16C64F;height: 52px;">
-            <div id="nav-brand" class="ms-5 col justify-content-center align-items-center">
-              <a class="navbar-brand align-items-center" href="{{route('app.index')}}"><i class="bi bi-boxes" style="font-size: 20px"></i> EzMoney!</a>
+            <div id="nav-brand" class="col ms-5 pt-3">
+              <a class="navbar-brand" href="{{route('app.index')}}"><p class="text-light text-end"><i class="bi bi-boxes text-light" style="font-size: 23px"></i> EzMoney!</p> </a>
             </div>
               
 
               <div class="collapse col navbar-collapse justify-content-center mx-auto" id="mainNav">
                   <ul class="navbar-nav">
                       <li class="nav-item">
-                          <a class="nav-link" href="{{ route('main.index')}}">Visão Geral</a>
+                          <a class="nav-link text-light ms-2 me-2" href="{{ route('main.index')}}">Visão Geral</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="{{ route('transactions.view') }}">Lançamentos</a>
+                          <a class="nav-link text-light ms-2 me-2" href="{{ route('transactions.view') }}">Lançamentos</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#">Relatórios</a>
+                          <a class="nav-link text-light ms-2 me-2" href="#">Relatórios</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#">Limite de Gastos</a>
+                          <a class="nav-link text-light ms-2 me-2" href="#">Limite de Gastos</a>
                       </li>
                   </ul>
               </div>
-              <div class="collapse col navbar-collapse justify-content-center" id="secondaryNav">
+              <div class="collapse col navbar-collapse justify-content-start align-items-center" id="secondaryNav">
                 <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a href="">Settings</a>
+                  <li class="nav-item mt-2 me-2">
+                    <a href=""><i class="bi bi-gear-fill text-light"></i></a>
                   </li>
-                  <li class="nav-item">
-                    <a href="">Notifications</a>
+                  <li class="nav-item mt-2">
+                    <a href=""><i class="bi bi-bell-fill text-light"></i></a>
                   </li>
-                  <li class="nav-item">
-                    <a href="">Profile</a>
+                  <li class="nav-item mt-1 ms-5">
+                    <a href=""><i class="bi bi-person-circle text-light" style="font-size: 30px"></i></a>
                   </li>
                 </ul>
               </div>
