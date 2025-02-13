@@ -232,5 +232,4 @@
         </div>
     </section>
 
-    <a href="{{ route('login.logout') }}">LOGOUT</a>
 @endsection
