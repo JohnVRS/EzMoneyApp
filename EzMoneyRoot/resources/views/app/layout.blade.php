@@ -19,10 +19,10 @@
 </head>
 <body>
     <header>
-      <nav class="navbar navbar-expand-sm bg-body-tertiary p-0">
+      <nav class="navbar navbar-expand-sm p-0">
           <div class="container-fluid "style="background: #16C64F;height: 52px;">
-            <div id="nav-brand" class="col" style="margin-left: 150px;margin-top:20px">
-              <a class="navbar-brand" href="{{route('app.index')}}"><p class="text-light text-end"><i class="bi bi-boxes text-light" style="font-size: 23px"></i> EzMoney!</p> </a>
+            <div id="nav-brand mt-5" class="col" style="margin-left: 150px;margin-top:25px">
+              <a class="navbar-brand" href="{{route('app.index')}}"><p class="text-light text-end fs-4"><i class="bi bi-boxes text-light" style="font-size: 23px;"></i> EzMoney!</p> </a>
             </div>
               
 
@@ -64,24 +64,19 @@
   @yield('content')
 
   <footer class="">
-    <div class="container-fluid bg-body-secondary">
-      <div class="col ">
-        <div class="row ">
-          <h5 class="text-Dark">Connect</h5>
-          <ul>
-            <li class="mt-3"><a class="fs-4 text-dark text-decoration-none" href="#!">Instagram</a></li>
-            <li class="mt-3"><a class="fs-4 text-dark text-decoration-none" href="https://github.com/JohnVRS">Github</a></li>
-          </ul>
-        </div>
-        <div class="row footer-copyright">
-          <span class="text-success align-middle">
-            Desenvolvido por:  <a class="fs-4 text-primary text-decoration-none" href="https://github.com/JohnVRS"> J. Vitor Rodrigues</a>
-          </span>
-        </div>
+    <div class="container-fluid row">
+      <div id="left col">
+        <i class="bi bi-boxes"></i>
+        <p>© 2025, Desenvolvido por: J. Vitor Rodrigues Santos</p>
       </div>
-      
-    </div>
-    
+      <div id="right col">
+        <i class="bi bi-instagram"></i>
+
+        <i class="bi bi-github"></i>
+
+        <i class="bi bi-linkedin"></i>
+      </div>
+  </div>
   </footer>
   
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
