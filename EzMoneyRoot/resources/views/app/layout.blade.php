@@ -20,10 +20,9 @@
 <body>
     <header>
       <nav class="navbar navbar-expand-sm p-0">
-        
-          <div class="container-fluid"style="background: #16C64F;height: 52px;">
-            <div id="nav-brand" class="col flex justify-content-end">
-              <a class="navbar-brand" href="{{route('app.index')}}"><p class="text-light fs-4"><i class="bi bi-boxes text-light" style="font-size: 23px;"></i> EzMoney!</p> </a>
+          <div class="container-fluid  "style="background: #16C64F;height: 52px;">
+            <div id="nav-brand" class="col mt-4" style="margin-left: 160px">
+              <a class="navbar-brand p-0" href="{{route('app.index')}}"><p class="text-light text-end fs-4"><i class="bi bi-boxes text-light" style="font-size: 23px;"></i> EZMONEY!</p> </a>
             </div>
               
 
@@ -43,7 +42,7 @@
                       </li>
                   </ul>
               </div>
-              <div class="collapse col navbar-collapse justify-content-start align-items-center me-5" id="secondaryNav">
+              <div class="collapse col navbar-collapse  me-5" id="secondaryNav">
                 <ul class="navbar-nav">
                   <li class="nav-item mt-2 me-2">
                     <a href=""><i class="bi bi-gear-fill text-light"></i></a>
