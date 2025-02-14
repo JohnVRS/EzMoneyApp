@@ -20,9 +20,10 @@
 <body>
     <header>
       <nav class="navbar navbar-expand-sm p-0">
-          <div class="container-fluid  "style="background: #16C64F;height: 52px;">
-            <div id="nav-brand" class="col align-items-center">
-              <a class="navbar-brand p-0" href="{{route('app.index')}}"><p class="text-light text-end fs-4"><i class="bi bi-boxes text-light" style="font-size: 23px;"></i> EzMoney!</p> </a>
+        
+          <div class="container-fluid"style="background: #16C64F;height: 52px;">
+            <div id="nav-brand" class="col flex justify-content-end">
+              <a class="navbar-brand" href="{{route('app.index')}}"><p class="text-light fs-4"><i class="bi bi-boxes text-light" style="font-size: 23px;"></i> EzMoney!</p> </a>
             </div>
               
 
@@ -63,20 +64,24 @@
   
   @yield('content')
 
-  <footer class="bg-dark p-4">
+  <footer class="bg-secondary p-4 mt-5">
     <div class="container-fluid ">
-      <div class="row align-items-center ">
-        <div id="left" class="col justify-content-start">
-          <i class="bi bi-boxes text-light fs-2 me-3 mt-4"></i>
-          <p class="text-light fs-6">© 2025, Desenvolvido por: J. Vitor Rodrigues Santos</p>
-        </div>
-        <div id="right" class="col justify-content-end">
-          <i class="bi bi-instagram text-light fs-2 ps-3"></i>
+      <div class="row">
+          <div id="left" class="col">
+            <div class="row flex justify-content-center">
+                <div class="col-4  ">
+                    <p class="text-light fs-6">© 2025, Desenvolvido por: J. Vitor Rodrigues Santos</p>
+                </div>
+            </div>
+      
+          </div>
+          <div id="right" class="col-4">
+            <i class="bi bi-instagram text-light fs-2 ps-3"></i>
 
-          <i class="bi bi-github text-light fs-2 ps-3"></i>
+            <i class="bi bi-github text-light fs-2 ps-3"></i>
 
-          <i class="bi bi-linkedin text-light fs-2 ps-3"></i>
-        </div>
+            <i class="bi bi-linkedin text-light fs-2 ps-3"></i>
+          </div>
       </div>
       
   </div>
