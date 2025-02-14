@@ -1,4 +1,4 @@
-@extends('app.layout')
+@extends('components.layouts.headerAndFooter')
 @section('title', 'Main')
 @section('content')
 
@@ -35,7 +35,8 @@
                         <div class="label">
                             <p>Acesso rápido</p>
                         </div>
-                        <!-- CRIAR MODAL PARA BOTOES DO CRUD, e usar o blade para criar um componente para as modais -->
+                            
+                            <!-- CRIAR MODAL PARA BOTOES DO CRUD, e usar o blade para criar um componente para as modais -->
                         <ul>
                             <li>
                                 <!--
