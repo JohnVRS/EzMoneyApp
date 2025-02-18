@@ -87,7 +87,7 @@
   </div>
   </footer>
   
-  <script src="{{ asset('site/jquery.js')}}"></script>
+    @vite(['resources/js/app.js'])
   
   </body>
 </html>
