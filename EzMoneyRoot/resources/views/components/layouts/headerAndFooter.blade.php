@@ -18,6 +18,7 @@
   
 </head>
 <body>
+  <x-modal.delete/>
     <header>
       <nav class="navbar navbar-expand-sm p-0">
           <div class="container-fluid  "style="background: #16C64F;height: 52px;">
@@ -86,6 +87,7 @@
   </div>
   </footer>
   
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="{{ asset('site/jquery.js')}}"></script>
+  
   </body>
 </html>

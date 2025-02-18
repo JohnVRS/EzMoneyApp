@@ -1,4 +1,4 @@
-@extends('app.layout')
+@extends('components.layouts.headerAndFooter')
 @section('title', 'Lançamentos')
 @section('section')
 

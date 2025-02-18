@@ -2,7 +2,6 @@
 @section('title', 'Main')
 @section('content')
 
-
     <section class="layout-section">
         <div class="section">
 
@@ -35,19 +34,10 @@
                         <div class="label">
                             <p>Acesso rápido</p>
                         </div>
-                            
-                            <!-- CRIAR MODAL PARA BOTOES DO CRUD, e usar o blade para criar um componente para as modais -->
                         <ul>
-                            <li>
-                                <!--
-                                    <a href="" class="expense" data-tooltip="Clique para adicionar uma despesa"><i
-                                            class="small material-icons red-text">remove_circle_outline</i>
-                                    <p class="btn-title">DESPESA</p>
-                                </a>
-                                
-                                -->
-                                
-                                <button type="button" class="">
+                            <li>    
+                                <!-- TESTE MODAL -->
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#test">
                                     <i class="bi-alarm"></i>
                                     <p class="btn-tile">DESPESA</p>
                                 </button>
@@ -67,13 +57,24 @@
                                 </a>
                             </li>
                         </ul>
-
-
-
-
-
-                        <!-- CONTINUAR TOOLTIPS CUSTom -->
                     </div>
+
+                    <!-- Estrutura do Modal -->
+                    <div class="modal fade" id="test" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1>TESTE</h1>
+                                </div>
+                                <div class="modal-body"></div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close">TESTe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
                 </div>
             </div>
 
@@ -119,20 +120,28 @@
                         <h4> Maiores gastos do mês atual</h4>
                         <div class="containerData">
                             <ul>
-                                <li><span><i class="tiny large material-icons green">local_pizza</i>Alimentação</span><strong>36,77%</strong></li>
-                                
-                                <li><span><i class="tiny large material-icons pink">accessibility</i>Cuidados pessoais</span><strong>36,44%</strong></li>
-                                
-                                <li><span><i class="tiny large material-icons orange">motorcycle</i>Moto</span><strong>13,50%</strong></li>
-                                
-                                <li><span><i class="tiny large material-icons purple">payment</i>Assinaturas e serviços</span><strong>6,07%</strong></li>
-                                
-                                <li><span><i class="tiny large material-icons blue">local_taxi</i>Transporte</span><strong>5,81%</strong></li>
+                                <li><span><i
+                                            class="tiny large material-icons green">local_pizza</i>Alimentação</span><strong>36,77%</strong>
+                                </li>
+
+                                <li><span><i class="tiny large material-icons pink">accessibility</i>Cuidados
+                                        pessoais</span><strong>36,44%</strong></li>
+
+                                <li><span><i
+                                            class="tiny large material-icons orange">motorcycle</i>Moto</span><strong>13,50%</strong>
+                                </li>
+
+                                <li><span><i class="tiny large material-icons purple">payment</i>Assinaturas e
+                                        serviços</span><strong>6,07%</strong></li>
+
+                                <li><span><i
+                                            class="tiny large material-icons blue">local_taxi</i>Transporte</span><strong>5,81%</strong>
+                                </li>
                             </ul>
 
-                            <img src="{{asset("images/svg/donut-chart.svg")}}" alt="">
+                            <img src="{{ asset('images/svg/donut-chart.svg') }}" alt="">
                         </div>
-                    
+
                     </div>
                 </div>
                 <div class="right">
@@ -214,18 +223,18 @@
 
 
                     <div class="weekExpenses">
-                        
+
                         <h4>Gastos da semana</h4>
                         <hr>
                         <div>
                             <small>Semana</small>
                             <p><small>R$</small> 455,90</p>
 
-                        
-                        </div>
-                        
-                    </div>
 
+                        </div>
+
+                    </div>
+                   
                 </div>
 
             </div>
