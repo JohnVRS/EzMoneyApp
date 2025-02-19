@@ -36,25 +36,29 @@
                         </div>
                         <ul>
                             <li>    
-                                <!-- TESTE MODAL -->
-                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#test">
-                                    <i class="bi-alarm"></i>
-                                    <p class="btn-tile">DESPESA</p>
+                                <button id="expense" type="button" class="btn pt-3" data-bs-toggle="modal" data-bs-target="#expenseModal">
+                                    <i class="bi bi-dash-circle"></i>
+                                    <p class="btn-title">DESPESA</p>
                                 </button>
                             </li>
-                            <li><a href="" class="revenue"><i
-                                        class="small material-icons green-text">add_circle_outline</i>
+                            <li>
+                                <button id="revenue" type="button" class="btn pt-3" data-bs-toggle="modal" data-bs-target="#revenueModal">
+                                    <i class="bi bi-plus-circle"></i>
                                     <p class="btn-title">RECEITA</p>
-                                </a>
+                                </button>
+                                
                             </li>
-                            <li><a href="" class="transfer"><i class="small material-icons grey-text">swap_horiz</i>
+                            <li>
+                                <button id="transf" type="button" class="btn pt-3" data-bs-toggle="modal" data-bs-target="#transfModal">
+                                    <i class="bi bi-repeat"></i>
                                     <p class="btn-title">TRANSF.</p>
-                                </a>
+                                </button>
                             </li>
-                            <li><a href="" class="export-excel"><i
-                                        class="small material-icons blue-text">file_download</i>
+                            <li>
+                                <button id="exportExcel" type="button" class="btn pt-3" data-bs-toggle="modal" data-bs-target="#exportModal">
+                                    <i class="bi bi-chevron-double-up"></i>
                                     <p class="btn-title">EXPORT</p>
-                                </a>
+                                </button>
                             </li>
                         </ul>
                     </div>
