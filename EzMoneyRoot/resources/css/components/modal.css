@@ -1,0 +1,45 @@
+
+
+.modal-content {
+    display: flex;
+    padding: 50px 64px 42px;
+    
+}
+.button-wrapper{
+    display: flex;
+   justify-content: end;
+    
+}
+
+.header h5 {
+    margin-bottom: 30px;
+}
+
+.inputRow{
+    border: none;
+    color: #2E312D;
+    list-style: none;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-weight: 500px;
+    line-height: 16px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+}
+
+.groupField {
+    border: 2px solid #EBEBEB;
+    border-radius: 6px;
+    background: #FEFDF9;
+    line-height: 18px;
+    padding: 7px 8px;
+    float: left;
+    border-radius: 3px;
+    transition: all 0.15sease-out 0s;
+    color: #2E312D;
+    font-size: 13px;
+    width: 100%;
+    appearance: none;
+}
