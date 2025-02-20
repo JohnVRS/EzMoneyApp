@@ -128,7 +128,7 @@
 }
 
 .quick-actions i {
-    font-size: 43px
+    font-size: 36px;
 }
 
 .quick-actions a,button {
@@ -151,5 +151,6 @@
     text-decoration: none;
     font-size: 12px;
     margin-top: 7px;
-    color: #2e312d;
+    color: #A0A0A0;
+    text-align: center;
 }

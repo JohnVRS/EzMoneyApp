@@ -37,26 +37,26 @@
                         <ul>
                             <li>    
                                 <button id="expense" type="button" class="btn pt-3" data-bs-toggle="modal" data-bs-target="#expenseModal">
-                                    <i class="bi bi-dash-circle"></i>
+                                    <i class="bi bi-dash-circle text-danger"></i>
                                     <p class="btn-title">DESPESA</p>
                                 </button>
                             </li>
                             <li>
                                 <button id="revenue" type="button" class="btn pt-3" data-bs-toggle="modal" data-bs-target="#revenueModal">
-                                    <i class="bi bi-plus-circle"></i>
+                                    <i class="bi bi-plus-circle text-success"></i>
                                     <p class="btn-title">RECEITA</p>
                                 </button>
                                 
                             </li>
                             <li>
                                 <button id="transf" type="button" class="btn pt-3" data-bs-toggle="modal" data-bs-target="#transfModal">
-                                    <i class="bi bi-repeat"></i>
+                                    <i class="bi bi-repeat text-secondary"></i>
                                     <p class="btn-title">TRANSF.</p>
                                 </button>
                             </li>
                             <li>
                                 <button id="exportExcel" type="button" class="btn pt-3" data-bs-toggle="modal" data-bs-target="#exportModal">
-                                    <i class="bi bi-chevron-double-up"></i>
+                                    <i class="bi bi-chevron-double-up text-primary"></i>
                                     <p class="btn-title">EXPORT</p>
                                 </button>
                             </li>
