@@ -18,7 +18,6 @@
   
 </head>
 <body>
-  <x-modal.delete/>
     <header>
       <nav class="navbar navbar-expand-sm p-0">
           <div class="container-fluid  "style="background: #16C64F;height: 52px;">
