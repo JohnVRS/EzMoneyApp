@@ -65,6 +65,7 @@
                     </div>
 
                     <x-modal.expense></x-modal.expense>
+                    <x-modal.revenue></x-modal.revenue>
                 
 
                 </div>
