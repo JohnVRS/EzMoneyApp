@@ -17,15 +17,12 @@
                         <input type="text" name="desc" id="input-modal-desc">
                     </div>
                 </div>
-                
+                 
                 <div class="inputRow">
                     <label for="">Valor</label>
                     <div class="groupField">
                         <input type="number">
                     </div>
-               </div>
-                
-                <div class="inputRow">
                     <label for="">Data</label>
                     <div class="groupField">
                         <input type="date" name="" id="">
@@ -34,12 +31,23 @@
                 <div class="inputRow">
                     <label for="">Conta/Cartão</label>
                     <div class="groupField">
-                        <input type="radio" name="" id="">
+                        <select name="selectCard" id="selectCard">
+                            <option selected> Escolha o cartão...</option>
+                            <option value="Mercado Pago">Mercado Pago</option>
+                            <option value="Bradesco"> Bradesco</option>
+                            <option value="Nubank">Nubank</option>
+                        </select>
                     </div>
   
                     <label for="">Categoria</label>
                     <div class="groupField">
-                        <input type="radio" name="" id="">
+                        <select name="selectCategory" id="selectCatefory">
+                            <option selected> Buscar Categoria...</option>
+                            <option value="1">Alimentação</option>
+                            <option value="2"> Saúde</option>
+                            <option value="3">Familía</option>
+                            <option value="4">Lazer</option>
+                        </select>
                     </div>
                 </div>
                 
