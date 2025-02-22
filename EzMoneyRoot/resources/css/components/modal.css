@@ -15,31 +15,55 @@
     margin-bottom: 30px;
 }
 
-.inputRow{
-    border: none;
-    color: #2E312D;
-    list-style: none;
-    font-family: "Inter", sans-serif;
-    font-size: 13px;
-    font-weight: 500px;
-    line-height: 16px;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    text-decoration: none;
+.inputRow {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
 }
 
-.groupField {
+.inputRow label {
+    font-size: 13px;
+    line-height: 13px;
+    color: #858782;
+    text-align: left;
+    display: block;
+    margin-bottom: 7px;
+}
+
+.inputRow .groupField:first-of-type{
+    width: 100%;
+}
+
+.groupField #input-modal-desc,#input-modal-data {
+    width: 100%;
+}
+
+.groupField input {
     border: 2px solid #EBEBEB;
-    border-radius: 6px;
+    border-radius: 3px;
     background: #FEFDF9;
     line-height: 18px;
     padding: 7px 8px;
     float: left;
-    border-radius: 3px;
-    transition: all 0.15sease-out 0s;
+    transition: all 0.15s ease-out 0s;
     color: #2E312D;
     font-size: 13px;
-    width: 100%;
-    appearance: none;
+    width: 50%;
+    margin-bottom: 5px;
 }
+
+.groupField select {
+    border: 2px solid #EBEBEB;
+    border-radius: 3px;
+    background: #FEFDF9;
+    line-height: 18px;
+    padding: 7px 8px;
+    float: left;
+    transition: all 0.15s ease-out 0s;
+    color: #2E312D;
+    font-size: 13px;
+    width: 50%;
+    margin-bottom: 5px;
+}
+
