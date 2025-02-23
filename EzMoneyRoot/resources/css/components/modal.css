@@ -67,3 +67,23 @@
     margin-bottom: 5px;
 }
 
+
+.footer div {
+    background-color: #129E3F;
+    width: 62px;
+    height: 62px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.footer .btn {
+    
+    position: relative;
+    display: block;
+    width: 62px;
+    height: 62px;
+    text-align: center;
+    outline: none;
+    
+}
+
