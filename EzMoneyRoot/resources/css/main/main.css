@@ -1,6 +1,6 @@
    
 
-bdy {
+body {
     background-color: rgb(252, 252, 252);
    
 }
@@ -17,11 +17,12 @@ bdy {
     justify-content: center;
     flex-direction: column;
     max-width: 1200px;
-
+    
 
 
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 200px;
     padding-left: 15px;
     padding-right: 15px;
 }

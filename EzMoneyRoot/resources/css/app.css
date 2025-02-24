@@ -2,6 +2,7 @@
 @import './main/main.css';
 @import './main/container-overview.css';
 @import './layout/navbar.css';
+@import './layout/footer.css';
 @import './main/accounts.css';
 @import './main/creditCards.css';
 @import './main/categoryExpenses.css';
