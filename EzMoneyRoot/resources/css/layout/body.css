@@ -3,3 +3,25 @@ body {
     font-family: "Inter", sans-serif;
     
 }
+
+* {
+    border: none;
+    color: #2E312D;
+    list-style: none;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    
+    }
+
+    a {
+        text-decoration: none;
+    }

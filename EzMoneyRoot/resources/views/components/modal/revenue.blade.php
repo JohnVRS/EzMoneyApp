@@ -16,30 +16,30 @@
                     <div class="groupField">
                         <input type="text" name="desc" id="input-modal-desc">
                     </div>
-                </div>
+                
                  
-                <div class="row">
-                    <div class="col-6">
+                    <div class="row">
+                        <div class="col-6">
 
-                        <label for="">Valor</label>
-                        <div class="groupField">
-                            <input type="number">
+                            <label for="">Valor</label>
+                            <div class="groupField">
+                                <input type="text" class="inputField">
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="col-6">
+                        
+                        <div class="col-6">
 
-                        <label for="">Data</label>
-                        <div class="groupField">
-                            <input type="date" name="" id="">
+                            <label for="">Data</label>
+                            <div class="groupField">
+                                <input type="date" name="" id="">
+                            </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="inputRow">
                 
                     <div class="row">
-                        <div class="col">
+                        <div class="col-6">
 
                             <label for="">Conta/Cartão</label>
                             <div class="groupField">
@@ -52,9 +52,9 @@
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col-6">
 
-                            <label for="">Categoria</label>
+                            <label for="" id="labelCategory">Categoria</label>
                             <div class="groupField">
                                 <select name="selectCategory" id="selectCategory">
                                     <option selected> Buscar Categoria...</option>

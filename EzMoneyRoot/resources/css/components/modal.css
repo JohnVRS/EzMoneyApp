@@ -49,8 +49,8 @@
     transition: all 0.15s ease-out 0s;
     color: #2E312D;
     font-size: 13px;
-    width: 50%;
-    margin-bottom: 5px;
+    width: 160px;
+    margin-bottom: 10px;
 }
 
 .groupField select {
@@ -63,9 +63,13 @@
     transition: all 0.15s ease-out 0s;
     color: #2E312D;
     font-size: 13px;
-    width: 50%;
+    width: 160px;
     margin-bottom: 5px;
 }
+
+
+
+
 
 
 .footer div {
