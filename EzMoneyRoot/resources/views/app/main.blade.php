@@ -10,7 +10,7 @@
                 <div class="box-leftside">
                     <div class="greeting">
                         <p>Boa noite,</p>
-                        <p>João Vitor Rodrigues Santos</p>
+                        <p>{{ $user['name']}}</p>
                     </div>
 
                     <div class="budget-overview">

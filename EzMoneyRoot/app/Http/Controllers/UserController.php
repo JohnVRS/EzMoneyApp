@@ -33,14 +33,14 @@ class UserController extends Controller
      */
     public function store(Request $request)
 {
-    $validatedData = $request->validate([
-        'name' => 'required|string|max:255',
-        'email' => 'required|email|max:255',
-        'password' => 'required|string|min:3',
-        'phone' => 'required|string',
-        'gender' => 'required|in:1,2',
-        'birth' => 'required|date',
-    ]);
+        $validatedData = $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'password' => 'required|string|min:3',
+            'phone' => 'required|string',
+            'gender' => 'required|in:1,2',
+            'birth' => 'required|date',
+        ]);
 
     $validatedData['password'] = bcrypt($request->password);
 
@@ -56,7 +56,12 @@ class UserController extends Controller
      */
     public function show(string $id)
     {
-        //
+        
+        $user = User::findOrFail($id);
+
+        $userName = User::where('id', $user->id)->first()->toArray();
+
+        return view('main', ['user' => $user, 'userName' => $userName]);
     }
 
     /**
