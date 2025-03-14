@@ -10,13 +10,17 @@
                 <div class="box-leftside">
                     <div class="greeting">
                         <p>Boa noite,</p>
-                        <p>{{ $user['name']}}</p>
+                        <p>
+                            {{
+                                $user->name;
+                            }}
+                        </p>
                     </div>
 
                     <div class="budget-overview">
                         <div class="budget-blocks" id="revenue">
                             <label>receita mensal</label>
-                            <strong style="color: #129e3f;">R$ 5.651,47</strong>
+                            <strong style="color: #129e3f;"> {{ $user->balance}}</strong>
                         </div>
 
                         <div class="budget-blocks" id="expense">

@@ -7,15 +7,28 @@ use Illuminate\Http\Request;
 
 class MainController extends Controller
 {
-    public function index(){
-        return view('app.main');
+    protected $userController;
+    public function __construct(UserController $userController) {
+        $this->userController = $userController;
     }
+    
+        
+    /*
+    public function index(){
+        $userId = auth()->id();
+        $name = $this->userController->showName($userId);
+        $balance = $this->userController->showBalance($userId);
 
-    public function show($id){
 
-        $user = User::findOrFail($id);
+        return view('app.main', compact('name', 'balance'));
+    }
+    */
 
-        return view('main.show', ['user' => $user]);
+    public function index(){
+        $userId = auth()->id();
+        $user = $this->userController->show($userId);
+
+        return view('app.main', compact('user'));
     }
     
 }

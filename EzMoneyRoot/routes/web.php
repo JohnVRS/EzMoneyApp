@@ -16,7 +16,7 @@ Route::get('/logout', [LoginController::class, 'logout'])->name('login.logout');
 Route::get('/register', [LoginController::class, 'create'])->name('login.create');
 
 Route::get('/main',[MainController::class, 'index'])->name('main.index')->middleware('auth');
-Route::get('/main/{$id}', [ MainController::class , 'show'])->name('main.show');
+
 
 
 

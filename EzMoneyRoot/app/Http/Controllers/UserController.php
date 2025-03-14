@@ -13,7 +13,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
+        
     }
 
     /**
@@ -51,40 +51,41 @@ class UserController extends Controller
     return redirect(route('main.index'));
 }
 
-    /**
-     * Display the specified resource.
-     */
+    
     public function show(string $id)
     {
-        
-        $user = User::findOrFail($id);
-
-        $userName = User::where('id', $user->id)->first()->toArray();
-
-        return view('main', ['user' => $user, 'userName' => $userName]);
+        $userData = User::find($id);
+        return $userData;
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
+    
     public function edit(string $id)
     {
-        //
+        
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
+   
     public function update(Request $request, string $id)
     {
-        //
+        
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
+ 
     public function destroy(string $id)
     {
-        //
+        
     }
+
+    public function showName(string $id) {
+        $user = User::find($id);
+        return $user ? $user->name : 'Usuário não encontrado';
+    }
+
+    public function showBalance(string $id) {
+
+        $user = User::find($id);
+        return $user ? $user->balance : 'Usuário não encontrado';
+    }
+
+
 }
