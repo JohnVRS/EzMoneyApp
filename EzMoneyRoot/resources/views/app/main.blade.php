@@ -20,7 +20,7 @@
                     <div class="budget-overview">
                         <div class="budget-blocks" id="revenue">
                             <label>receita mensal</label>
-                            <strong style="color: #129e3f;"> {{ $user->balance}}</strong>
+                            <strong style="color: #129e3f;">R$ {{ $user->balance}}</strong>
                         </div>
 
                         <div class="budget-blocks" id="expense">
