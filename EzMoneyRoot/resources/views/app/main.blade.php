@@ -20,12 +20,12 @@
                     <div class="budget-overview">
                         <div class="budget-blocks" id="revenue">
                             <label>receita mensal</label>
-                            <strong style="color: #129e3f;">R$ {{ $user->balance}}</strong>
+                            <strong style="color: #129e3f;">R$ {{ $user->revenue}}</strong>
                         </div>
 
                         <div class="budget-blocks" id="expense">
                             <label>despesa mensal</label>
-                            <strong style="color: #d72638;">R$ 2.231,17</strong>
+                            <strong style="color: #d72638;">R$ {{ $user->expense}}</strong>
                         </div>
 
                         <div class="budget-blocks" id="report">
@@ -81,7 +81,7 @@
                     <div class="accountsWallet">
                         <div class="accountBalance">
                             <small>Saldo Geral</small>
-                            <p><small>R$</small> 3.225.45</p>
+                            <p><small>R$</small> {{ $user->balance}}</p>
                         </div>
                         <hr>
                         <h4> Minhas contas</h4>
